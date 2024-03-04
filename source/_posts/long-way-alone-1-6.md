@@ -1,5 +1,5 @@
 ---
-title: long way alone 1-6
+title: 前路无知己 1-6 异国的开始
 date: 2024-03-03 22:58:19
 tags:
 ---
