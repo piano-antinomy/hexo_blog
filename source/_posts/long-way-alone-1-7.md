@@ -1,5 +1,5 @@
 ---
-title: long way alone 1-7 welcome to NYC
+title: 前路无知己 1-6 welcome to NYC
 date: 2024-03-07 23:31:41
 tags:
 ---
