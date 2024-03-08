@@ -29,7 +29,7 @@ tags:
 
 到了餐厅，明菲平和的坐了下来，并不理会武卫东在吃什么，“申请怎么样了？”
 
-“嗯嗯，正想跟你说呢，我准备申请11所院校的CS专业，MIT，Columbia，Cornell，Wilson Kelly，USC，Stanford，UCLA，UT Austin...” 
+“嗯嗯，正想跟你说呢，我准备申请11所院校的CS专业，MIT，Columbia，Cornell，Carnegie Mellon，USC，Stanford，UCLA，UT Austin...” 
 
 "祝你好运"，明菲没等他说完，就打断道，“我今天还要继续做实验，中午晚上就不一起吃饭了”。
 
