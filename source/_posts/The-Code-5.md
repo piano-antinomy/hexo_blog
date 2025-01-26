@@ -1,7 +1,7 @@
 ---
 title: 幽灵代码-5
 date: 2025-01-25 22:07:34
-tags:[幽灵代码]
+tags: [幽灵代码]
 ---
 
 Cindy开始撰写那份至关重要的“Correction of Error - COE”文档。Tiago也时不时给出建议，帮助她梳理思路。文档的结构清晰明了：
