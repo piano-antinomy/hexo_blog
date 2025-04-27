@@ -54,7 +54,7 @@ Angela在那头边听边认真记笔记，时不时发出几声“哇”“太�
 
 Cindy慢慢把鼠标从邮件正文移到左边，“Mark as unread”。停顿了一下，又点了回来，重新又读了一遍。她不敢相信，她不知道来来回回读了多少遍，仍然不敢相信这次巨大的reorg就如同针对自己一样把自己的亲生骨肉残忍剥离。
 
-她想笑，可怎么都笑不出来。原本想着，回来之后继续完善那套Wolf的Auth pipeline，把prototype推进上线，让组里看到自己的能力，这是她回国前夜以继日在做的东西，是她调研、构架、设计、验证一整套下来亲手写出来的，是她期待promotion希望的关键项目。她点开Slack，果然，在她离开的这些日子里，各种project channel已经悄悄被加了‘deprecated’字眼，而进去新的项目channel里，看到Angela每天的status update就如同钢针一般刺伤自己的眼睛。她忽然觉得自己很可笑，离开前还那么信任Angela，还在饭桌前把半碗饭撂下，掏出几个小时细细讲流程、讲设计、讲上线的方法，讲到嗓子干，讲到饭菜都凉了。她以为是在扶持一个后辈，没想到是把让别人把自己当梯子给爬了上去。
+她想笑，可怎么都笑不出来。原本想着，回来之后继续完善那套Wolf的Auth pipeline，把prototype推进上线，让组里看到自己的能力，这是她回国前夜以继日在做的东西，是她调研、构架、设计、验证一整套下来亲手写出来的，是她期待promotion希望的关键项目。她点开Slack，果然，在她离开的这些日子里，各种project channel已经悄悄被加了‘deprecated’字眼，而进去新的项目channel里，看到Angela每天的status update就如同钢针一般刺伤自己的眼睛。她忽然觉得自己很可笑，离开前还那么信任Angela，还在饭桌前把半碗饭撂下，掏出几个小时细细讲流程、讲设计、讲上线的方法，讲到嗓子干，讲到饭菜都凉了。她以为是在扶持一个后辈，没想到是让别人把自己当梯子给爬了上去。
 
 “不对，Prood为什么会突然变成这个项目的owner呢？他原本是下游的dashboard负责人呢。” Cindy冷静的想到，
 
@@ -90,7 +90,7 @@ Prood笑的合不拢嘴，正在给大领导写一封launch email，要让所有
 
 “rollback！” 虽然Angela还想看看有什么bug可以尽快修复，但是Prood等不及了，下达了rollback的指令。
 
-按照原计划，rollback只需要将config=off写入control plane即可。Angela无奈，只好做出操作，心想着这次launch party肯定没了。她盯着metrics，期待写入之后的config能够将metrics重新带回去，虽然回到590ms，但是至少failure rate会大幅度下降。
+按照原计划，rollback只需要将switch=off写入control plane即可。Angela无奈，只好做出操作，心想着这次launch party肯定没了。她盯着metrics，期待写入之后的config能够将metrics重新带回去，虽然回到590ms，但是至少failure rate会大幅度下降。
 
 一分钟，五分钟，十分钟。
 
@@ -102,7 +102,7 @@ Launch party变成了oncall war room，天堂地狱，一念之间。
 
 Cindy坐在边上看着这一堆热锅上的蚂蚁，不禁好奇为啥rollback没有生效，她点开层层代码，很快便一声冷笑，她发现rollback的feature根本没有被实测过，Angela过于自信也过于着急，根本没有把rollback feature测试过，这里面rollback的config写入有一些bug没有被抓到。
 
-但是，虽然config写不进去，rollback还是可以手动调整各项fleet的预设初始值，并且重启fleet来达到的。Angela完全没有这方面的经验，不知道如何快速手动的调整prod的各项switch数值，焦急的手脚冰凉。Sanjay开始了责问，要求尽快解决问题，不一会儿，VP也在ticket上询问什么时候能缓解问题。
+但是，虽然config写不进去，rollback还是可以手动调整各项fleet的预设初始值，并且重启fleet来达到的。Angela完全没有这方面的经验，不知道如何快速手动的调整prod的各项switch数值，焦急的手脚冰凉。Sanjay开始了责问，要求尽快解决问题，不一会儿，VP也在ticket上询问什么时候能缓解问题。ticket已经被升级到了sev1.
 
 Angela机械的打开prod host的server log，一行行熟悉又陌生的log，各种issue和压力下她几乎丧失了思考能力，她听不到任何人说话，也不知道现在怎么才能把traffic修复到old path上，哭爹喊娘都没用的时候，突然一条log让她眼球一颤：
 
