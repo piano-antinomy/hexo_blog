@@ -169,7 +169,7 @@ cipher = DES3.new(key, DES3.MODE_ECB)
 
 突然，终端屏幕闪烁了一下，一个新的文件自动在她的桌面上生成了：`revelation.sh`
 
-Cindy双击打开这个bash脚本，里面的代码让她眉头紧锁：
+Cindy Vim打开这个bash脚本，里面的代码让她眉头紧锁：
 
 ```bash
 #!/bin/bash
@@ -220,7 +220,7 @@ main
 
 Cindy的手指悬在回车键上方，心跳加速。这个脚本显然是要打印一些重要文档，具体内容被深度加密了，这段自动生成的脚本首先将内容存入本地的pdf然后打印出来。
 
-一股寒意从脊背升起。她深吸一口气，按下了回车键。
+一股寒意从脊背升起。她深吸一口气，敲入了 ```sh revelation.sh```
 
 脚本开始运行，终端显示：
 ```
@@ -233,10 +233,9 @@ Printing evidence documents...
 
 纸上打印的是一份技术文档的封面：
 
-**机密文档 - 仅限授权人员**
-**项目代号：神经收割者 (Neural Harvester)**
-**malou.ai 生物计算部门**
-**第一阶段实验报告**
+**Confidential - A/C priviledge**
+**Project：Neural Harvester**
+**malou.ai Biological Computation**
 
 打印机继续工作，一张接一张的文档源源不断地输出。Cindy拿起第二张纸，上面是一张模糊的实验室照片，她能看到玻璃容器中漂浮着什么东西...
 
